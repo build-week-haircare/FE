@@ -2,7 +2,7 @@
 
 After Cloning:
 
-*CD into hair-care
+*CD into 'hair-care'
 
 *Run:  'Yarn'
 
