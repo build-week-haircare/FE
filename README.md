@@ -4,7 +4,9 @@ After Cloning:
 
 *CD into hair-care
 
-*Run: Yarn Start
+*Run:  'Yarn'
+
+*Run: 'Yarn Start'
 
 Happy Hacking! ;)
 
