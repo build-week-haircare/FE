@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import HairStylistCard from './HairStylistCard';
+import './HairStylistMainPage.css';
 import axios from 'axios';
+
+import HairStylistCard from './HairStylistCard';
+
 const HairStylistMainPage = () => {
   // TODO-1: Add useState to track data from useEffect
-  const [hairstylist, setHairStylist] = useState([]);
+  //   const [hairstylist, setHairStylist] = useState([]);
 
   // always console.log  the data you are working with. So you can understand how to use that data.
-  console.log(hairstylist);
+  //   console.log(hairstylist);
 
   //  Add API Request here - must run in `useEffect`
   //  Important: verify the 'useEffect' parameter: the dependancies array!
@@ -27,10 +30,18 @@ const HairStylistMainPage = () => {
 
   return (
     <section className="character-list grid-view">
-      {hairstylist.map(stylist => {
+      <div className="ui text container">
+        <h2>
+          We provide the best and fastest way to find a great hairstylist.
+          Getting the trendiest haircut with confidence. <br /> “You need a
+          haircut? We got you’re haircut.”
+        </h2>
+      </div>
+      <HairStylistCard />;
+      {/* {hairstylist.map(stylist => {
         console.log(stylist);
         return <HairStylistCard key={stylist.id} stylist={stylist} />;
-      })}
+      })} */}
     </section>
   );
 };
