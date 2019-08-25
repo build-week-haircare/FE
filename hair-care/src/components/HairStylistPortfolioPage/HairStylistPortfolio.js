@@ -14,6 +14,12 @@ function HairStylistPortfolio() {
         sed maxime magni impedit reiciendis recusandae deserunt nisi nesciunt
         eaque. Modi?
       </h4>
+      <NavLink to={`/`}>
+        <button class="ui left labeled icon button">
+          <i class="left arrow icon"></i>
+          Back
+        </button>
+      </NavLink>
       <div class="ui animated fade button" tabindex="0">
         <NavLink to={`/hairstylistpage`}>
           <div class="visible content">View my work</div>
