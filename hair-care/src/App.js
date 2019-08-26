@@ -7,6 +7,7 @@ import Logo from '../src/haircare.png';
 import HairStylistMainPage from './components/HairStylistPage/HairStylistMainPage';
 import HairStylistPortfolio from './components/HairStylistPortfolioPage/HairStylistPortfolio';
 import HairStylistStylesPage from './components/HairStylistPortfolioPage/HairStylistStylesPage';
+import SocialMedia from './components/SocialMedia/SocialMedia';
 
 function App() {
   return (
@@ -14,10 +15,11 @@ function App() {
       <Divider horizontal>
         <img src={Logo} alt="hair logo" />
       </Divider>
+
       <Route exact path={`/`} component={HairStylistMainPage} />
       <Route path={`/portfolio`} component={HairStylistPortfolio} />
-      <Route path={`/stylespage`} component={HairStylistStylesPage} />
       <Route path="/hairstylistpage" component={HairStylistStylesPage} />
+      <Route path="/portfolio/socialmedia" component={SocialMedia} />
     </div>
   );
 }

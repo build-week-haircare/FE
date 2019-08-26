@@ -1,0 +1,21 @@
+.facebook.icon,
+.instagram.icon,
+.twitter.icon {
+    font-size: 30px;
+    margin: 30px 30px;
+    color: black;
+
+
+}
+
+.facebook:hover {
+    color: goldenrod
+}
+
+.instagram:hover {
+    color: goldenrod;
+}
+
+.twitter:hover {
+    color: goldenrod;
+}
