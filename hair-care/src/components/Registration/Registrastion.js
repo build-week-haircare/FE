@@ -1,28 +1,42 @@
-import React from 'react'
+import React, { Component } from 'react'
+import axios from 'axios'
 
- class Registration extends React.Component {
+class Registration extends Component {
      state = {
-        username: '',
-        email: '',
-        password: ''
-     }
+        credentials: {
+            username: '',
+            email: '',
+            password: ''
+        }
+    }
 
      handleChange = e => {
+        
         this.setState({ 
-            [e.target.name]: e.target.value, 
+            credentials: {
+                ...this.state.credentials,
+                [e.target.name]: e.target.value 
+            }
         })
+        console.log(this.state.credentials)
     }
 
 
-    onSubmit(e){
+    onSubmit = (e) => {      
         e.preventDefault()
-        console.log(this.state)
+        // console.log()
+        console.log('submit',this.state.credentials)
+        //post here
+        // axios.post('apiHere')
+        //     .then(res=> console.log(res))
+        //     .catch(err => console.log(err))
+        
     }
     render() {
         return (
             <div>
                 {/* <h2>test</h2> */}
-                <form>
+                <form onSubmit={this.onSubmit}>
                     <legend>Registration</legend>
                     <div>
                         <label>UserName</label>
@@ -30,7 +44,7 @@ import React from 'react'
                             type='text'
                             name='username'
                             placeholder='Username'
-                            value={this.state.username}
+                            value={this.state.credentials.username}
                             onChange={this.handleChange}
                         />                      
                     </div>
@@ -40,7 +54,7 @@ import React from 'react'
                             type='email'
                             name='email'
                             placeholder='Email'
-                            value={this.state.email}
+                            value={this.state.credentials.email}
                             onChange={this.handleChange}
                         />
                     </div>
@@ -50,11 +64,11 @@ import React from 'react'
                             type='password'
                             name='password'
                             placeholder='Password'
-                            value={this.state.password}
+                            value={this.state.credentials.password}
                             onChange={this.handleChange}
                         />
                     </div>
-                    <button onClick={this.onSub}>Submit</button>
+                    <button type='submit'>Submit</button>
                 </form>
             </div>
         )
