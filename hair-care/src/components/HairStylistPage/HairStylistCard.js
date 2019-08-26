@@ -6,7 +6,7 @@ const HairStylistCard = props => {
   return (
     <div class="ui card container">
       <div class="image">
-        <img src="https://picsum.photos/id/237/200/300" />
+        <img src="https://images.unsplash.com/photo-1541216970279-affbfdd55aa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" />
       </div>
       <div class="content">
         <span class="header">name</span>
