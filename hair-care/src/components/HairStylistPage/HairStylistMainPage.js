@@ -1,19 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import HairStylistCard from './HairStylistCard';
+import './HairStylistMainPage.css';
 import axios from 'axios';
+
+import HairStylistCard from './HairStylistCard';
+
 const HairStylistMainPage = () => {
   // TODO-1: Add useState to track data from useEffect
-  const [hairstylist, setHairStylist] = useState([]);
+  //   const [hairstylist, setHairStylist] = useState([]);
 
-   // always console.log  the data you are working with. So you can understand how to use that data.
-  console.log(hairstylist);
+  // always console.log  the data you are working with. So you can understand how to use that data.
+  //   console.log(hairstylist);
 
-   //  Add API Request here - must run in `useEffect`
+  //  Add API Request here - must run in `useEffect`
   //  Important: verify the 'useEffect' parameter: the dependancies array!
 
-   //Huge List of data, that's it. We loop through lists, and that is what I do here. After I loop through the list from the api I pass that data to the Hair Stylist Card component via props. So this entire Hair Stylist component returns a new array, of the Hair Stylist Card component with the data looped over each time for each item in that array. That is what this components code RESOLVES TO.
+  //Huge List of data, that's it. We loop through lists, and that is what I do here. After I loop through the list from the api I pass that data to the Hair Stylist Card component via props. So this entire Hair Stylist component returns a new array, of the Hair Stylist Card component with the data looped over each time for each item in that array. That is what this components code RESOLVES TO.
 
-   //   useEffect(() => {
+  //   useEffect(() => {
   //     axios
   //       .get('')
   //       .then(response => {
@@ -25,14 +28,22 @@ const HairStylistMainPage = () => {
   //       });
   //   }, []);
 
-   return (
+  return (
     <section className="character-list grid-view">
-      {hairstylist.map(stylist => {
+      <div className="ui text container">
+        <h2>
+          We provide the best and fastest way to find a great hairstylist.
+          Getting the trendiest haircut with confidence. <br /> “You need a
+          haircut? We got you’re haircut.”
+        </h2>
+      </div>
+      <HairStylistCard />;
+      {/* {hairstylist.map(stylist => {
         console.log(stylist);
         return <HairStylistCard key={stylist.id} stylist={stylist} />;
-      })}
+      })} */}
     </section>
   );
 };
 
- export default HairStylistMainPage;
+export default HairStylistMainPage;
