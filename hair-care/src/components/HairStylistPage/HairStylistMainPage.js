@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './HairStylistMainPage.css';
+
 import axios from 'axios';
 
 import HairStylistCard from './HairStylistCard';

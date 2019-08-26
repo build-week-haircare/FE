@@ -1,3 +1,23 @@
 #root>div>div>div>a {
+    /* font for button */
     color: black;
+}
+
+#root>div>div>h1 {
+    /* header */
+    margin-top: 20px;
+}
+
+
+#root>div>div>div:nth-child(2) {
+    /* image Background */
+    background: #eee;
+    padding: 5px 0;
+    border-top: 1px solid goldenrod;
+    border-bottom: 2px solid goldenrod;
+    box-shadow: 5px 5px 5px #888;
+}
+
+.img {
+    margin: 3px 0;
 }

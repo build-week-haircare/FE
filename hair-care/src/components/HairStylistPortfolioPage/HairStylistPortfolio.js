@@ -1,14 +1,21 @@
 import React from 'react';
-import { Route, NavLink } from 'react-router-dom';
-import HairStylistStylesPage from './HairStylistStylesPage';
+import { NavLink } from 'react-router-dom';
+import Hair from '../../../src/hairstylistOne.jpg';
+import { Image } from 'semantic-ui-react';
+// import HairStylistStylesPage from './HairStylistStylesPage';
 
 import './HairStylistPortfolio.css';
 
 function HairStylistPortfolio() {
   return (
-    <div className="ui text container">
-      <h1>Hair Care Portfolio</h1>
-      <h4>
+    <div className="ui fluid container">
+      <h1>Styles Portfolio</h1>
+      <div className="img">
+        <Image src={Hair} size="small" centered circular />
+      </div>
+
+      <h2>{`Hair Stylist: `}</h2>
+      <h4 className="ui text container">
         Bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam id,
         architecto quis facere repellendus eius culpa similique quaerat ullam
         sed maxime magni impedit reiciendis recusandae deserunt nisi nesciunt
