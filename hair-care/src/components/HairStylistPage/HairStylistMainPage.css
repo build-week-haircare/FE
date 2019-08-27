@@ -1,3 +1,7 @@
 #root>div>section>div>div.extra.content>a {
     margin: 0 20px;
 }
+.ui.link.cards{
+    margin-top: 100px;
+    margin-left: 72px;
+}
