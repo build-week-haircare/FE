@@ -40,3 +40,4 @@ const stylists = [
       img: 'https://files.slack.com/files-pri/T4JUEB3ME-FMRR2MP1B/test11.jpg'
     }
   ];
+export default stylists;

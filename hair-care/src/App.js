@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import Logo from '../src/haircare.png';
 import HairStylistMainPage from './components/HairStylistPage/HairStylistMainPage';
+import stylists from './components/HairStylistPage/HairStylistImages';
 // import HairStylistPortfolio from './components/HairStylistPortfolioPage/HairStylistPortfolio';
 // import HairStylistStylesPage from './components/HairStylistPortfolioPage/HairStylistStylesPage';
 

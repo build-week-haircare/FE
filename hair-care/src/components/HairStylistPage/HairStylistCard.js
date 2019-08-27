@@ -5,9 +5,9 @@ import stylists from './HairStylistImages';
 const HairStylistCard = props => {
   
   return (
-    <div className="ui link cards">
+    <div className="ui link cards" key={stylists.id}>
 
-      <div className="card">
+      <div className="card"  >
         <div className="image">
           <img src="" alt="stylist 1"/>
         </div>
