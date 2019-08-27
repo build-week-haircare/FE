@@ -12,9 +12,9 @@ function App() {
       <img src={Logo} alt="hair logo" />
 
       <Route exact path={`/`} component={HairStylistMainPage} />
-      <Route path={`/portfolio`} component={HairStylistPortfolio} />
+      {/* <Route path={`/portfolio`} component={HairStylistPortfolio} />
       <Route path={`/stylespage`} component={HairStylistStylesPage} />
-      <Route path="/hairstylistpage" component={HairStylistStylesPage} />
+      <Route path="/hairstylistpage" component={HairStylistStylesPage} /> */}
     </div>
   );
 }

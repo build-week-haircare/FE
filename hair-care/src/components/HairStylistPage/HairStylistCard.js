@@ -9,7 +9,7 @@ const HairStylistCard = props => {
 
       <div className="card">
         <div className="image">
-          <img src="https://files.slack.com/files-pri/T4JUEB3ME-FMKDLFLTT/test2.jpg" alt="stylist 1"/>
+          <img src="" alt="stylist 1"/>
         </div>
 
         <div className="content">
@@ -25,7 +25,7 @@ const HairStylistCard = props => {
             <button className="ui icon button">
               <i className="thumbs up outline icon"></i>
             </button>
-            <Link to="/portfolio">View Portfolio</Link>
+            {/* <Link to="/portfolio">View Portfolio</Link> */}
             <button className="ui icon button">
               <i className="thumbs down outline icon"></i>
             </button>
@@ -34,7 +34,7 @@ const HairStylistCard = props => {
 
       <div className="card">
         <div className="image">
-          <img src="https://files.slack.com/files-pri/T4JUEB3ME-FMEBMV9EE/test6.jpg" alt="stylist 2"/>
+          <img src="" alt="stylist 2"/>
         </div>
 
         <div className="content">
@@ -50,7 +50,7 @@ const HairStylistCard = props => {
             <button className="ui icon button">
               <i className="thumbs up outline icon"></i>
             </button>
-            <Link to="/portfolio">View Portfolio</Link>
+            {/* <Link to="/portfolio">View Portfolio</Link> */}
             <button className="ui icon button">
               <i className="thumbs down outline icon"></i>
             </button>
@@ -59,7 +59,7 @@ const HairStylistCard = props => {
 
       <div className="card">
         <div className="image">
-          <img src="https://files.slack.com/files-pri/T4JUEB3ME-FMEBRNSKD/test1.jpg" alt="stylist 3"/>
+          <img src="" alt="stylist 3"/>
         </div>
 
         <div className="content">
@@ -75,7 +75,7 @@ const HairStylistCard = props => {
             <button className="ui icon button">
               <i className="thumbs up outline icon"></i>
             </button>
-            <Link to="/portfolio">View Portfolio</Link>
+            {/* <Link to="/portfolio">View Portfolio</Link> */}
             <button className="ui icon button">
               <i className="thumbs down outline icon"></i>
             </button>
@@ -84,7 +84,7 @@ const HairStylistCard = props => {
 
       <div className="card">
         <div className="image">
-          <img src="https://files.slack.com/files-pri/T4JUEB3ME-FMEBMV9FU/test5.jpg" alt="stylist 4"/>
+          <img src="" alt="stylist 4"/>
         </div>
 
         <div className="content">
@@ -100,7 +100,7 @@ const HairStylistCard = props => {
             <button className="ui icon button">
               <i className="thumbs up outline icon"></i>
             </button>
-            <Link to="/portfolio">View Portfolio</Link>
+            {/* <Link to="/portfolio">View Portfolio</Link> */}
             <button className="ui icon button">
               <i className="thumbs down outline icon"></i>
             </button>
@@ -109,7 +109,7 @@ const HairStylistCard = props => {
 
       <div className="card">
         <div className="image">
-          <img src="https://files.slack.com/files-pri/T4JUEB3ME-FMEBUC8RH/test4.jpg" alt="stylist 5"/>
+          <img src="" alt="stylist 5"/>
         </div>
 
         <div className="content">
@@ -125,7 +125,7 @@ const HairStylistCard = props => {
             <button className="ui icon button">
               <i className="thumbs up outline icon"></i>
             </button>
-            <Link to="/portfolio">View Portfolio</Link>
+            {/* <Link to="/portfolio">View Portfolio</Link> */}
             <button className="ui icon button">
               <i className="thumbs down outline icon"></i>
             </button>
@@ -134,7 +134,7 @@ const HairStylistCard = props => {
 
       <div className="card">
         <div className="image">
-          <img src="https://files.slack.com/files-pri/T4JUEB3ME-FMEBQJFMG/test10.jpg" alt="stylist 6"/>
+          <img src="" alt="stylist 6"/>
         </div>
 
         <div className="content">
@@ -150,7 +150,7 @@ const HairStylistCard = props => {
             <button className="ui icon button">
               <i className="thumbs up outline icon"></i>
             </button>
-            <Link to="/portfolio">View Portfolio</Link>
+            {/* <Link to="/portfolio">View Portfolio</Link> */}
             <button className="ui icon button">
               <i className="thumbs down outline icon"></i>
             </button>
@@ -159,7 +159,7 @@ const HairStylistCard = props => {
 
       <div className="card">
         <div className="image">
-          <img src="https://files.slack.com/files-pri/T4JUEB3ME-FMEBUC90B/test12.jpg" alt="stylist 7"/>
+          <img src="" alt="stylist 7"/>
         </div>
 
         <div className="content">
@@ -175,7 +175,7 @@ const HairStylistCard = props => {
             <button className="ui icon button">
               <i className="thumbs up outline icon"></i>
             </button>
-            <Link to="/portfolio">View Portfolio</Link>
+            {/* <Link to="/portfolio">View Portfolio</Link> */}
             <button className="ui icon button">
               <i className="thumbs down outline icon"></i>
             </button>
@@ -184,7 +184,7 @@ const HairStylistCard = props => {
 
       <div className="card">
         <div className="image">
-          <img src="https://files.slack.com/files-pri/T4JUEB3ME-FMRR2MP1B/test11.jpg" alt="stylist 8"/>
+          <img src="" alt="stylist 8"/>
         </div>
 
         <div className="content">
@@ -200,7 +200,7 @@ const HairStylistCard = props => {
             <button className="ui icon button">
               <i className="thumbs up outline icon"></i>
             </button>
-            <Link to="/portfolio">View Portfolio</Link>
+            {/* <Link to="/portfolio">View Portfolio</Link> */}
             <button className="ui icon button">
               <i className="thumbs down outline icon"></i>
             </button>
