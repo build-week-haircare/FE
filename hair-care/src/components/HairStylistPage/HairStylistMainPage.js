@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './HairStylistMainPage.css';
 import axios from 'axios';
-import stylists from './HairStylistImages';
 
 import HairStylistCard from './HairStylistCard';
 
@@ -43,10 +42,10 @@ const HairStylistMainPage = () => {
       <h3 className="ui dividing header"></h3>
       <h1>Find Stylists</h1>
       <HairStylistCard />;
-      {HairStylistImages.map(stylist => {
+      {/* {hairstylist.map(stylist => {
         console.log(stylist);
         return <HairStylistCard key={stylist.id} stylist={stylist} />;
-      })}
+      })} */}
     </section>
   );
 };
