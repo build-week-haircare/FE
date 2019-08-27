@@ -36,7 +36,7 @@ function HairStylistPortfolio() {
       </div>
       <NavLink to={`/portfolio/socialmedia`}>
         <button class="ui right labeled icon button">
-          <i class="right arrow icon"></i>
+          <i class="level down alternate icon"></i>
           Social Media
         </button>
       </NavLink>
