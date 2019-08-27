@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, NavLink } from 'react-router-dom';
 import Hair from '../../../src/hairstylistOne.jpg';
-import SocialMedia from '../SocialMedia/SocialMedia';
 
 import { Image } from 'semantic-ui-react';
 
@@ -12,7 +11,12 @@ function HairStylistPortfolio() {
     <div className="ui fluid container">
       <h1 className="h1Style">Styles Portfolio</h1>
       <div className="img">
-        <Image src={Hair} size="small" centered circular />
+        <Image
+          src={`https://files.slack.com/files-pri/T4JUEB3ME-FMKDLFLTT/test2.jpg`}
+          size="small"
+          centered
+          circular
+        />
       </div>
 
       <h2 className="textShadow"> {`Hair Stylist: `}</h2>

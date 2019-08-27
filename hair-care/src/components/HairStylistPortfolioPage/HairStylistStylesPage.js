@@ -1,9 +1,10 @@
 import React from 'react';
+import HairStylistDividerCard from './HairStylistDividerCard';
 
 function HairStylistStylesPage() {
   return (
     <div>
-      <h1>Hair Care Styles Page</h1>
+      <HairStylistDividerCard />
     </div>
   );
 }

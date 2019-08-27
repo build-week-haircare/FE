@@ -19,10 +19,28 @@
 }
 
 .img {
-    margin: 3px 0;
+
+    margin: 3px auto;
+    width: 50%;
+    border-radius: 70px;
+}
+
+div.scrollmenu {
+    background-color: #333;
+
 }
 
 .h1Style,
-.textShadow {
+.textShadow,
+.socialMediaH1 {
     text-shadow: 0px 0px 2px goldenrod
+}
+
+
+
+
+#root>div>div:nth-child(2)>div>div.ui.stackable.very.relaxed.two.column.grid>div:nth-child(1) {
+    display: flex;
+    flex-basis: 0 0 90%;
+
 }
