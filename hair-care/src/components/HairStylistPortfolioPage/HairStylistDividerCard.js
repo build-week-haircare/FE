@@ -14,7 +14,7 @@ const HairStylistDividerCard = () => (
           />
 
           <Image
-            src="https://images.pexels.com/photos/696287/pexels-photo-696287.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            src="https://images.pexels.com/photos/2799605/pexels-photo-2799605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
             size="medium"
             bordered
           />
@@ -36,6 +36,13 @@ const HairStylistDividerCard = () => (
       </Grid.Column>
 
       <Grid.Column verticalAlign="middle">
+        <Image
+          className="salon"
+          src="https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/6069358/910/607/m1/fpnw/wm0/1-.jpg?1552621547&s=fcf21185e310aa9bc9a4e212c0a5f079"
+          size="big"
+          bordered
+        />
+
         <HairStylistModal />
       </Grid.Column>
     </Grid>

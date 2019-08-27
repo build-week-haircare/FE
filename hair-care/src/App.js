@@ -4,7 +4,6 @@ import './App.css';
 import { Divider } from 'semantic-ui-react';
 
 import Logo from '../src/haircare.png';
-import HairStylistMainPage from './components/HairStylistPage/HairStylistMainPage';
 import HairStylistPortfolio from './components/HairStylistPortfolioPage/HairStylistPortfolio';
 import HairStylistStylesPage from './components/HairStylistPortfolioPage/HairStylistStylesPage';
 import SocialMedia from './components/SocialMedia/SocialMedia';
@@ -16,7 +15,6 @@ function App() {
         <img src={Logo} alt="hair logo" />
       </Divider>
 
-      <Route exact path={`/`} component={HairStylistMainPage} />
       <Route path={`/portfolio`} component={HairStylistPortfolio} />
       <Route path="/hairstylistpage" component={HairStylistStylesPage} />
       <Route path="/portfolio/socialmedia" component={SocialMedia} />

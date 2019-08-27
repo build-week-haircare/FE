@@ -8,6 +8,11 @@
     margin-top: 20px;
 }
 
+#root>div>div.ui.horizontal.divider {
+    /* logo divider */
+    margin-bottom: 0px;
+}
+
 
 #root>div>div>div:nth-child(2) {
     /* image Background */
@@ -36,11 +41,28 @@ div.scrollmenu {
     text-shadow: 0px 0px 2px goldenrod
 }
 
+#root>div>div:nth-child(2)>div>div.ui.stackable.very.relaxed.two.column.grid>div:nth-child(1) {
+    /* Div for flexed images */
+    padding-left: 80px;
+    padding-top: 20px;
+}
+
+.ui.button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px #888;
+}
+
 
 
 
 #root>div>div:nth-child(2)>div>div.ui.stackable.very.relaxed.two.column.grid>div:nth-child(1) {
+    /* Div for images  */
     display: flex;
-    flex-basis: 0 0 90%;
+    flex-basis: 0 0 80%;
 
+}
+
+.salon {
+    margin: 10px auto;
 }
