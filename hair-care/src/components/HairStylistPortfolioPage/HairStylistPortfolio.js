@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, NavLink } from 'react-router-dom';
-import Hair from '../../../src/hairstylistOne.jpg';
-
+import axios from 'axios';
 import { Image } from 'semantic-ui-react';
 
 import './HairStylistPortfolio.css';
 
-function HairStylistPortfolio() {
+function HairStylistPortfolio(props) {
+  const [stylists, setHairStylist] = useState([]);
+  console.log(props);
+  const stylistId = props.match.params.stylist_id;
+
+  useEffect(() => {
+    axios.get('').then(res => {
+      console.log(res);
+      setHairStylist(res.data);
+    });
+  }, []);
+
+  const stylistName = props.hairstylist.map(stylist => {
+    return stylist.id;
+  });
+
   return (
     <div className="ui fluid container">
       <h1 className="h1Style">Styles Portfolio</h1>
@@ -33,12 +47,12 @@ function HairStylistPortfolio() {
         </button>
       </NavLink>
       <div class="ui animated fade button" tabindex="0">
-        <NavLink to={`/hairstylistpage/`}>
+        <NavLink to={`/hairstylistpage/:stylist_id`}>
           <div class="visible content">View my work</div>
           <div class="hidden content">Thank you</div>
         </NavLink>
       </div>
-      <NavLink to={`/portfolio/socialmedia`}>
+      <NavLink to={`portfolio/socialmedia`}>
         <button class="ui right labeled icon button">
           <i class="level down alternate icon"></i>
           Social Media

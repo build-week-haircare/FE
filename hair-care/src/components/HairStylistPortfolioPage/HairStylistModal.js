@@ -8,7 +8,7 @@ const HairStylistModal = () => (
     <Modal.Content>
       <p>
         Do you want to make and appointment? Hitting yes will bring you to my
-        social media links, I can be reached at any one of my accounts.
+        social media links, I can be reached through any of my accounts.
       </p>
     </Modal.Content>
     <Modal.Actions>
