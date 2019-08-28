@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Route, NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import axios from 'axios';
 import { Image } from 'semantic-ui-react';
 
@@ -7,8 +7,7 @@ import './HairStylistPortfolio.css';
 
 function HairStylistPortfolio(props) {
   const [stylists, setHairStylist] = useState([]);
-  console.log(props);
-  const stylistId = props.match.params.stylist_id;
+  // console.log(props);
 
   useEffect(() => {
     axios.get('').then(res => {
@@ -17,23 +16,24 @@ function HairStylistPortfolio(props) {
     });
   }, []);
 
-  const stylistName = props.hairstylist.map(stylist => {
-    return stylist.id;
-  });
-
   return (
-    <div className="ui fluid container">
-      <h1 className="h1Style">Styles Portfolio</h1>
-      <div className="img">
-        <Image
-          src={`https://files.slack.com/files-pri/T4JUEB3ME-FMKDLFLTT/test2.jpg`}
-          size="small"
-          centered
-          circular
-        />
+    <section>
+      <div className="ui fluid container">
+        {props.hairstylist.map(stylist => {
+          return (
+            <div className="imageDiv" key={stylist.id}>
+              <div className="img">
+                <Link to={`/hairstylistpage/${stylist.id}`}>
+                  <Image src={stylist.img} size="large" centered circular />
+                </Link>
+              </div>
+            </div>
+          );
+        })}
       </div>
 
-      <h2 className="textShadow"> {`Hair Stylist: `}</h2>
+      <h1 className="h1Style">Styles Portfolio</h1>
+      <h2 className="textShadow">Stylist Name:</h2>
       <h4 className="ui text container">
         Bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam id,
         architecto quis facere repellendus eius culpa similique quaerat ullam
@@ -41,24 +41,19 @@ function HairStylistPortfolio(props) {
         eaque. Modi?
       </h4>
       <NavLink to={`/`}>
-        <button class="ui left labeled icon button">
-          <i class="left arrow icon"></i>
+        <button className="ui left labeled icon button">
+          <i className="left arrow icon"></i>
           Back Home
         </button>
       </NavLink>
-      <div class="ui animated fade button" tabindex="0">
-        <NavLink to={`/hairstylistpage/:stylist_id`}>
-          <div class="visible content">View my work</div>
-          <div class="hidden content">Thank you</div>
-        </NavLink>
-      </div>
+
       <NavLink to={`portfolio/socialmedia`}>
-        <button class="ui right labeled icon button">
-          <i class="level down alternate icon"></i>
+        <button className="ui right labeled icon button">
+          <i className="level down alternate icon"></i>
           Social Media
         </button>
       </NavLink>
-    </div>
+    </section>
   );
 }
 

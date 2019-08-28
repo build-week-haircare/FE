@@ -1,3 +1,9 @@
+#root>div>section>div.ui.fluid.container {
+    /* container for images */
+    display: flex;
+    justify-content: space-around;
+}
+
 #root>div>div>div>a {
     /* font for button */
     color: black;
@@ -65,4 +71,12 @@ div.scrollmenu {
 
 .salon {
     margin: 10px auto;
+}
+
+#root>div>div:nth-child(2)>div>div.ui.stackable.very.relaxed.two.column.grid>div:nth-child(1)>div:nth-child(2)>button {
+    /* animated button on styles page */
+
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
 }

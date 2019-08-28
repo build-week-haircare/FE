@@ -7,13 +7,13 @@ const SocialMedia = () => {
     <div>
       <h3 className="socialMediaH1">See more of my work here:</h3>
       <a href="/">
-        <i class="facebook icon"></i>
+        <i className="facebook icon"></i>
       </a>
       <a href="/">
-        <i class="instagram icon"></i>
+        <i className="instagram icon"></i>
       </a>
       <a href="/">
-        <i class="twitter icon"></i>
+        <i className="twitter icon"></i>
       </a>
     </div>
   );

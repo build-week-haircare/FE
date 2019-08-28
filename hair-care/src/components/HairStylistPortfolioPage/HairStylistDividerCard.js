@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Divider, Grid, Segment, Image } from 'semantic-ui-react';
-import HairStylistModal from './HairStylistModal';
 
 const HairStylistDividerCard = () => (
   <Segment placeholder>
@@ -42,8 +41,6 @@ const HairStylistDividerCard = () => (
           size="big"
           bordered
         />
-
-        <HairStylistModal />
       </Grid.Column>
     </Grid>
 
