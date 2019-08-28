@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Divider, Grid, Segment, Image } from 'semantic-ui-react';
+import { Divider, Grid, Segment, Image } from 'semantic-ui-react';
 
 const HairStylistDividerCard = () => (
   <Segment placeholder>
@@ -44,7 +44,7 @@ const HairStylistDividerCard = () => (
       </Grid.Column>
     </Grid>
 
-    <Divider vertical>And</Divider>
+    <Divider vertical>✄</Divider>
   </Segment>
 );
 

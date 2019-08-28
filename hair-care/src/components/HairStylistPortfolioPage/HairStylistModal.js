@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button, Header, Icon, Modal } from 'semantic-ui-react';
 
 const HairStylistModal = () => (
-  <Modal trigger={<Button fluid>A Message For You</Button>} basic size="small">
+  <Modal trigger={<Button>A Message For You</Button>} basic size="small">
     <Header icon="archive" content="Thank you for viewing my portfolio" />
     <Modal.Content>
       <p>

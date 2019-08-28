@@ -1,20 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../SocialMedia/SocialMedia.css';
 
 const SocialMedia = () => {
   return (
     <div>
-      <h3 className="socialMediaH1">See more of my work here:</h3>
-      <a href="/">
+      <h3 className="socialMediaH1">Book Appointment Here:</h3>
+      <Link to="https://www.facebook.com">
         <i className="facebook icon"></i>
-      </a>
-      <a href="/">
+      </Link>
+      <Link to="https://www.instagram.com">
         <i className="instagram icon"></i>
-      </a>
-      <a href="/">
+      </Link>
+      <Link to="https://twitter.com">
         <i className="twitter icon"></i>
-      </a>
+      </Link>
     </div>
   );
 };
