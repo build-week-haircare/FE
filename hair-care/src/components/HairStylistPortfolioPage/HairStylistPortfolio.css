@@ -1,7 +1,28 @@
+/* Colors #494949 gray,  #fdb4e5 Pink */
+
 #root>div>section>div.ui.fluid.container {
     /* container for images */
     display: flex;
     justify-content: space-around;
+
+}
+
+#root>div>section {
+    background-color: #494949;
+    border-top: 2px solid #fdb4e5;
+    border-bottom: 2px solid #fdb4e5;
+    width: 90%;
+    margin: 5px auto;
+    padding-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px #fdb4e5;
+
+}
+
+#root>div>section>h4>p {
+    /* paragraph inside portfolio section */
+    font-family: 'PT Serif', serif;
+    color: #eee;
 }
 
 #root>div>div>div>a {
@@ -26,7 +47,7 @@
     padding: 5px 0;
     border-top: 1px solid goldenrod;
     border-bottom: 2px solid goldenrod;
-    box-shadow: 5px 5px 5px #888;
+
 }
 
 .img {
@@ -34,6 +55,8 @@
     margin: 3px auto;
     width: 50%;
     border-radius: 70px;
+    border: 5px inset plum;
+    box-shadow: 0 0 5px #888;
 }
 
 div.scrollmenu {
@@ -44,7 +67,9 @@ div.scrollmenu {
 .h1Style,
 .textShadow,
 .socialMediaH1 {
-    text-shadow: 0px 0px 2px goldenrod
+    text-shadow: 1px 1px 0px #494949, 2px 2px 0px #fdb4e5;
+    color: #eee;
+    font-family: 'Indie Flower', cursive;
 }
 
 #root>div>div:nth-child(2)>div>div.ui.stackable.very.relaxed.two.column.grid>div:nth-child(1) {

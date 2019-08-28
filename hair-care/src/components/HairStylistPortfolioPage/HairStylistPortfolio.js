@@ -35,10 +35,12 @@ function HairStylistPortfolio(props) {
       <h1 className="h1Style">Styles Portfolio</h1>
       <h2 className="textShadow">Stylist Name:</h2>
       <h4 className="ui text container">
-        Bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam id,
-        architecto quis facere repellendus eius culpa similique quaerat ullam
-        sed maxime magni impedit reiciendis recusandae deserunt nisi nesciunt
-        eaque. Modi?
+        <p>
+          Bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam id,
+          architecto quis facere repellendus eius culpa similique quaerat ullam
+          sed maxime magni impedit reiciendis recusandae deserunt nisi nesciunt
+          eaque. Modi?
+        </p>
       </h4>
       <NavLink to={`/`}>
         <button className="ui left labeled icon button">

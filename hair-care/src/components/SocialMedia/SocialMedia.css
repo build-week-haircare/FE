@@ -9,18 +9,19 @@
 }
 
 .facebook:hover {
-    color: goldenrod
+    color: #fdb4e5
 }
 
 .instagram:hover {
-    color: goldenrod;
+    color: #fdb4e5;
 }
 
 .twitter:hover {
-    color: goldenrod;
+    color: #fdb4e5;
 }
 
 .socialMediaH1 {
     padding-top: 20px;
     margin-bottom: 0;
+    color: #494949;
 }
