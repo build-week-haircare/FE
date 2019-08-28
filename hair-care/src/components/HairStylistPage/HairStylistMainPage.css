@@ -2,12 +2,11 @@
     margin: 0 20px;
 }
 .ui.link.card{
-    margin-bottom: 25px;
+    margin-bottom: 35px;
  }
 .images{
     display: flex;
     flex-wrap: wrap;
     margin: 35px;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
