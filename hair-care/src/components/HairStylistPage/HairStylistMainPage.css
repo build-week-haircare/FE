@@ -1,7 +1,13 @@
 #root>div>section>div>div.extra.content>a {
     margin: 0 20px;
 }
-.ui.link.cards{
-    margin-top: 25px;
-    margin-left: 72px;
+.ui.link.card{
+    margin-bottom: 25px;
+ }
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 35px;
+    justify-content: space-between;
+    
 }

@@ -3,8 +3,7 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import Logo from '../src/haircare.png';
 import HairStylistMainPage from './components/HairStylistPage/HairStylistMainPage';
-import HairStylistCard from './components/HairStylistPage/HairStylistCard';
-import stylists from './components/HairStylistPage/HairStylistImages';
+
 
 
 function App() {

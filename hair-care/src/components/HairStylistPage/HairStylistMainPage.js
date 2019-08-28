@@ -22,7 +22,7 @@ const HairStylistMainPage = () => {
   //   }, []);
 
   return (
-    <section className="character-list grid-view">
+    <section className="character-list">
       <div className="ui text container">
       <div className="ui divider"></div>
         <h2>
@@ -34,12 +34,14 @@ const HairStylistMainPage = () => {
        
       <h3 className="ui dividing header"></h3>
       <h1>Find Stylists</h1>
+    <div className="images">
       {hairstylist.map(stylists => {
         console.log(stylists);
         return (
         <div key={stylists.id}><HairStylistCard key={stylists.id} stylists={stylists}/> </div>
         )
       })}
+    </div>    
     </section>
   );
 };
