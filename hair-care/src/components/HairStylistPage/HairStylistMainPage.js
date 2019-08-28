@@ -1,21 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import './HairStylistMainPage.css';
 import axios from 'axios';
-
+import {Route} from 'react-router-dom'
 import HairStylistCard from './HairStylistCard';
+import hairstylist from './HairStylistImages';
+import stylists from './HairStylistImages';
 
 const HairStylistMainPage = () => {
-  // TODO-1: Add useState to track data from useEffect
   //   const [hairstylist, setHairStylist] = useState([]);
-
-  // always console.log  the data you are working with. So you can understand how to use that data.
   //   console.log(hairstylist);
-
-  //  Add API Request here - must run in `useEffect`
-  //  Important: verify the 'useEffect' parameter: the dependancies array!
-
-  //Huge List of data, that's it. We loop through lists, and that is what I do here. After I loop through the list from the api I pass that data to the Hair Stylist Card component via props. So this entire Hair Stylist component returns a new array, of the Hair Stylist Card component with the data looped over each time for each item in that array. That is what this components code RESOLVES TO.
-
   //   useEffect(() => {
   //     axios
   //       .get('')
@@ -41,11 +34,12 @@ const HairStylistMainPage = () => {
        
       <h3 className="ui dividing header"></h3>
       <h1>Find Stylists</h1>
-      <HairStylistCard />;
-      {/* {hairstylist.map(stylist => {
-        console.log(stylist);
-        return <HairStylistCard key={stylist.id} stylist={stylist} />;
-      })} */}
+      {hairstylist.map(stylists => {
+        console.log(stylists);
+        return (
+        <div key={stylists.id}><HairStylistCard key={stylists.id} stylists={stylists}/> </div>
+        )
+      })}
     </section>
   );
 };
