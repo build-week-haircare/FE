@@ -37,7 +37,7 @@ function HairStylistPortfolio(props) {
         })}
       </div>
 
-      <h1 className="h1Style">StyLes Portfolio</h1>
+      <h1 className="h1Style">StyList Portfolio</h1>
 
       <h4 className="ui text container">
         <p>

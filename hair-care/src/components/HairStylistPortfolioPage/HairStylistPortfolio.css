@@ -73,7 +73,16 @@ div.scrollmenu {
     text-shadow: 1px 1px 0px #000, 2px 2px 0px #fdb4e5;
     color: #eee;
     font-family: 'Indie Flower', cursive;
-    font-size: 2rem;
+    font-size: 2.5rem;
+}
+
+.textShadow {
+    color: #aaa5a5;
+}
+
+.h1Style {
+    text-decoration: underline;
+
 }
 
 #root>div>div:nth-child(2)>div>div.ui.stackable.very.relaxed.two.column.grid>div:nth-child(1) {
