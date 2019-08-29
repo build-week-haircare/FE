@@ -1,6 +1,6 @@
 import axios from 'axios';
-import {LOGIN_FAILURE, LOGIN_SUCCESS} from '../reducers'
-import {REGISTER_SUCCESS} from '../reducers'
+import {LOGIN_FAILURE, LOGIN_SUCCESS} from '../Reducers'
+import {REGISTER_SUCCESS} from '../Reducers'
 
 export const loginActionCreator = (username, password) => 
     (dispatch) => {

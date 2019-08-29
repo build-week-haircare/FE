@@ -1,7 +1,7 @@
 import React from 'react' 
 import {Link} from 'react-router-dom'
 import '../App.css'
-import {loginActionCreator} from '../store/actions'
+import {loginActionCreator} from '../store/Actions'
 import {connect} from 'react-redux'
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup"; 

@@ -3,7 +3,7 @@ import '../App.css'
 import { Formik, Form, Field } from "formik";
 import {connect} from 'react-redux';
 import * as Yup from "yup"; 
-import {registerActionCreator} from '../store/actions'
+import {registerActionCreator} from '../store/Actions'
 
   
 function RegisterForm(props) { 

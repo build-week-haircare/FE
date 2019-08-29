@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css'; 
-import LoginForm from '../src/Components/Login'
-import RegisterForm from './Components/Register' 
+import LoginForm from './components/Login'
+import RegisterForm from './components/Register'
 import {Route ,BrowserRouter as Router} from 'react-router-dom';
 import {connect} from 'react-redux'
-import HairStylist from './Components/HairStylist'
+import HairStylist from './components/HairStylist'
 
 function App({isLoggedIn ,isRegister}) {
 

@@ -17,6 +17,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} 
+
+#userName , #password , #regUserName , #regEmail , #regPassword , #loginSubmit , #regSubmit {
+  width:500px;
 }
 
 .App-link {
