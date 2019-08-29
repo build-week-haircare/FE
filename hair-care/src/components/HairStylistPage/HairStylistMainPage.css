@@ -8,5 +8,15 @@
     display: flex;
     flex-wrap: wrap;
     margin: 35px;
-    justify-content: space-between;    
+    justify-content: space-between;   
+}
+h2{
+    font-family: 'Indie Flower', cursive;
+}
+h1{
+    font-family: 'PT Serif', serif; 
+}
+.card{
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px;
 }

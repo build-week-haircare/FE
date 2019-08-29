@@ -4,7 +4,7 @@ import axios from 'axios';
 import {Route} from 'react-router-dom'
 import HairStylistCard from './HairStylistCard';
 import hairstylist from './HairStylistImages';
-import stylists from './HairStylistImages';
+
 
 const HairStylistMainPage = () => {
   //   const [hairstylist, setHairStylist] = useState([]);
