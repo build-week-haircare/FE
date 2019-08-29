@@ -1,15 +1,12 @@
-
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
-import './App.css';
 import { Divider } from 'semantic-ui-react';
 import stylistData from '../src/components/Carousel/StylistImageData';
 
 import LoginForm from "./forms/LoginForm";
+import Registration from './components/Registration/Registrastion'
 import Logo from '../src/haircare.png';
 import HairStylistPortfolio from './components/HairStylistPortfolioPage/HairStylistPortfolio';
 import HairStylistStylesPage from './components/HairStylistPortfolioPage/HairStylistStylesPage';
@@ -22,7 +19,8 @@ function App() {
 
     <div className="App">
       <Router>
-        <Route path="/LoginForm" component={LoginForm} />
+       <Route path="/LoginForm" component={LoginForm} />
+      <Route path='/registration' component={Registration} />
       <Divider horizontal>
         <img src={Logo} alt="hair logo" />
       </Divider>
