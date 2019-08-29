@@ -24,7 +24,7 @@ const HairStylistCard = props => {
             <button className="ui icon button">
               <i className="thumbs up outline icon"></i>
             </button>
-            <Link to="/portfolio">View Portfolio </Link>
+            <Link to="/portfolio"> View Portfolio </Link>
             <button className="ui icon button">
               <i className="thumbs down outline icon"></i>
             </button>
