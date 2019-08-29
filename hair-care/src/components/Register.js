@@ -9,8 +9,6 @@ import {registerActionCreator} from '../store/Actions'
 function RegisterForm(props) { 
 
     const RegisterSchema = Yup.object().shape({
-        username: Yup.string()
-        .required("Your name is required"),
          email: Yup.string()
           .required("Your email is required"), 
         password: Yup.string()
@@ -20,9 +18,9 @@ function RegisterForm(props) {
     return ( 
         <Formik
         validationSchema={RegisterSchema}
-        initialValues={{username: "" , email: "" , password: ""}}
+        initialValues={{email: "" , password: ""}}
         onSubmit={(values) => {
-            props.registerActionCreator(values.username, values.email , values.password)
+            props.registerActionCreator(values.email , values.password)
         }} 
         render = {({handleSubmit,errors,touched}) => {
             return(
@@ -30,11 +28,6 @@ function RegisterForm(props) {
              <h1>RegisterForm</h1> 
              {props.error ? <p style={{ margin: "0", color: "red" }}>{props.error}</p> : null}
             <Form class="ui form" onSubmit = {handleSubmit}>
-             {errors.username && touched.username ? (<p style={{ margin: "0", color: "red" }}>{errors.username}</p>) : null}
-                <div class="field">
-                    <label>User Name</label>
-                    <Field id ="regUserName" type="text" name="user-name" placeholder="User Name" />
-                </div> 
                 {errors.email && touched.email ? (<p style={{ margin: "0", color: "red" }}>{errors.email}</p>) : null}
                 <div class="field">
                     <label>Email</label>

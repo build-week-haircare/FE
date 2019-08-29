@@ -4,7 +4,7 @@ import {REGISTER_SUCCESS} from '../Reducers'
 
 export const loginActionCreator = (username, password) => 
     (dispatch) => {
-        axios.post("https://lambda-howto-app.herokuapp.com/api/v1/auth/login",{
+        axios.post("https://bw-hair-care-be.herokuapp.com/api/users/login",{
             email: username,
             password: password
         }).then(res => {
@@ -14,12 +14,11 @@ export const loginActionCreator = (username, password) =>
         })
     } 
 
-    export const registerActionCreator = (username , email , password) => {
+    export const registerActionCreator = ( email , password) => {
         return(dispatch) => {
-        axios.post("https://lambda-howto-app.herokuapp.com/api/v1/auth/signup" , { 
-             username : username ,
+        axios.post("https://bw-hair-care-be.herokuapp.com/api/auth/register" , { 
              email: email ,
-             password : password 
+             password : password
             }).then(res => { 
                 console.log(res)
                 dispatch({type:REGISTER_SUCCESS , payload:res.data.body.token})
