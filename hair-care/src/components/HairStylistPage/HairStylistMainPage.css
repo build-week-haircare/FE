@@ -3,6 +3,7 @@
 }
 .ui.link.card{
     margin-bottom: 35px;
+    background: #494949;
  }
 .images{
     display: flex;
@@ -12,11 +13,22 @@
 }
 h2{
     font-family: 'Indie Flower', cursive;
+    color: plum;
 }
 h1{
     font-family: 'PT Serif', serif; 
+    color: #494949;
 }
 .card{
     font-family: 'Indie Flower', cursive;
-    font-size: 16px;
+    font-size: 23px;
+}
+div{
+    margin-bottom: 20px;
+}
+.content{
+    color: plum;
+}
+.date{
+    color: plum;
 }
