@@ -5,7 +5,8 @@ class Registration extends Component {
      state = {
         credentials: {
             email: '',
-            password: ''
+            password: '',
+            stylist: false
         }
     }
 
@@ -20,15 +21,24 @@ class Registration extends Component {
         console.log(this.state.credentials)
     }
 
+    handleChanges = e => {
+
+        this.setState({
+
+        })
+    }
+
 
     onSubmit = (e) => {      
         e.preventDefault()
         // console.log()
         console.log('submit',this.state.credentials)
         //post here
-        axios.post('https://bw-hair-care-be.herokuapp.com/api/users/auth/register')
-            .then(res=> 
-                localStorage.setItem('token', res.token))
+        axios.post('https://bw-hair-care-be.herokuapp.com/api/auth/register', this.state.credentials)
+            .then(res=>{ 
+                localStorage.setItem('token', res.token)
+                this.props.history.push("/Mainpage");
+            })
             .catch(err => console.log(err))
         
     }
@@ -56,6 +66,13 @@ class Registration extends Component {
                             placeholder='Password'
                             value={this.state.credentials.password}
                             onChange={this.handleChange}
+                        />
+                        <label>New Stylist</label>
+                        <input 
+                            type='checkbox' 
+                            name='stylist'
+                            value={this.state.credentials.stylist}
+                            // onChange={}
                         />
                     </div>
                     <button type='submit'>Submit</button>
