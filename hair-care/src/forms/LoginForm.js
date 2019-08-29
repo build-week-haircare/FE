@@ -6,7 +6,7 @@ import axios from "axios";
 export default function LoginForm(props) {
   return (
     <Formik
-      initialValues={{ username: "", password: "" }}
+      initialValues={{ email: "", password: "" }}
       // onSubmit - submit handler that takes values from rendered inputs username & password
       // and makes a post request to local Node.js server to authenticate user.
       onSubmit={(values, formikBag) => {
@@ -14,7 +14,7 @@ export default function LoginForm(props) {
         // formikBag update isSubmitting prop to indicate to user in the rendered view
         // request is still in progress
         formikBag.setSubmitting(true);
-        const url = "http://localhost:4040/api/login";
+        const url = "https://bw-hair-care-be.herokuapp.com/api/auth/login";
         axios
           .post(url, values)
           .then(response => {
@@ -25,19 +25,19 @@ export default function LoginForm(props) {
             // re-enables submit button
             formikBag.setSubmitting(false);
             // redirects user Dashboard
-            props.history.push("/Dashboard");
+            props.history.push("/Mainpage");
           })
           .catch(error => {
             // if request fails, logs error and re-enables submit button
-            console.log("error:", error);
+            console.log("error:", error.message);
             formikBag.setSubmitting(false);
           });
       }}
       // used Yup to provide rules for input validation
       validationSchema={Yup.object().shape({
-        username: Yup.string().required("Username is required."),
+        email: Yup.string().required("Email is required."),
         password: Yup.string()
-          .min(8, "Password must be 8-20 characters.")
+          .min(3, "Password must be 3-20 characters.")
           .max(20)
           .required("Password is required.")
       })}
@@ -48,15 +48,15 @@ export default function LoginForm(props) {
             <label className="label">Username</label>
             <Field
               className="input"
-              name="username"
+              name="email"
               type="text"
               autoComplete="off"
               // maps value of username html input tag in the form of a field component
               // to the formik value username
-              value={values.username}
+              value={values.email}
             />
             {/*if someone touched username field & it doesn't match Yup validation then displays error in p tag*/}
-            {touched.username && errors.username && <p>{errors.username}</p>}
+            {touched.email && errors.email && <p>{errors.email}</p>}
           </div>
           <div className="form-group">
             <label className="label">Password</label>

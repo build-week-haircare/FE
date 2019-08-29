@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "./App.css";
-import { Route } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Divider } from 'semantic-ui-react';
 import stylistData from '../src/components/Carousel/StylistImageData';
 
 import LoginForm from "./forms/LoginForm";
 import Registration from './components/Registration/Registrastion'
-import Logo from '../src/haircare.png';
+import Logo from '../src/imgs/haircare.png';
 import HairStylistPortfolio from './components/HairStylistPortfolioPage/HairStylistPortfolio';
 import HairStylistStylesPage from './components/HairStylistPortfolioPage/HairStylistStylesPage';
 import SocialMedia from './components/SocialMedia/SocialMedia';
@@ -19,11 +18,12 @@ function App() {
 
     <div className="App">
       <Router>
-       <Route path="/LoginForm" component={LoginForm} />
-      <Route path='/registration' component={Registration} />
       <Divider horizontal>
         <img src={Logo} alt="hair logo" />
       </Divider>
+       <Route path="/LoginForm" component={LoginForm} />
+      <Route path='/registration' component={Registration} />
+
 
       <Route
         path={`/portfolio`}
@@ -45,7 +45,8 @@ function App() {
       />
 
       <Route path="/portfolio/socialmedia" component={SocialMedia} />
-       <Route exact path={`/`} component={HairStylistMainPage} />
+
+       <Route exact path={`/Mainpage`} component={HairStylistMainPage} />
          {/* <Route path ={`/portfolio`} component={HairStylistPortfolio} /> */}      
       </Router>
     </div>
