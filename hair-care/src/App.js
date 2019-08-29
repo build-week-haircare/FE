@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
@@ -8,11 +9,14 @@ import Logo from '../src/haircare.png';
 import HairStylistPortfolio from './components/HairStylistPortfolioPage/HairStylistPortfolio';
 import HairStylistStylesPage from './components/HairStylistPortfolioPage/HairStylistStylesPage';
 import SocialMedia from './components/SocialMedia/SocialMedia';
+import HairStylistMainPage from './components/HairStylistPage/HairStylistMainPage';
+
 
 function App() {
   const [hsImage, setHSImage] = useState(stylistData);
   return (
     <div className="App ">
+
       <Divider horizontal>
         <img src={Logo} alt="hair logo" />
       </Divider>
@@ -37,6 +41,9 @@ function App() {
       />
 
       <Route path="/portfolio/socialmedia" component={SocialMedia} />
+       <Route exact path={`/`} component={HairStylistMainPage} />
+         {/* <Route path ={`/portfolio`} component={HairStylistPortfolio} /> */}      
+
     </div>
   );
 }
