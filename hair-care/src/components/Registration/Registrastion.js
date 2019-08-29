@@ -4,7 +4,6 @@ import axios from 'axios'
 class Registration extends Component {
      state = {
         credentials: {
-            username: '',
             email: '',
             password: ''
         }
@@ -27,9 +26,10 @@ class Registration extends Component {
         // console.log()
         console.log('submit',this.state.credentials)
         //post here
-        // axios.post('apiHere')
-        //     .then(res=> console.log(res))
-        //     .catch(err => console.log(err))
+        axios.post('https://bw-hair-care-be.herokuapp.com/api/users/auth/register')
+            .then(res=> 
+                localStorage.setItem('token', res.token))
+            .catch(err => console.log(err))
         
     }
     render() {
@@ -38,16 +38,6 @@ class Registration extends Component {
                 {/* <h2>test</h2> */}
                 <form onSubmit={this.onSubmit}>
                     <legend>Registration</legend>
-                    <div>
-                        <label>UserName</label>
-                        <input 
-                            type='text'
-                            name='username'
-                            placeholder='Username'
-                            value={this.state.credentials.username}
-                            onChange={this.handleChange}
-                        />                      
-                    </div>
                     <div>
                         <label>Email</label>
                         <input 
