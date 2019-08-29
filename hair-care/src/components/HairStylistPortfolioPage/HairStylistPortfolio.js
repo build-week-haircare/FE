@@ -10,9 +10,9 @@ function HairStylistPortfolio(props) {
   // console.log(props);
 
   useEffect(() => {
-    axios.get('').then(res => {
+    axios.get('https://bw-hair-care-be.herokuapp.com/').then(res => {
       console.log(res);
-      setHairStylist(res.data);
+      // setHairStylist(res.data);
     });
   }, []);
 
