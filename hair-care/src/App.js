@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'; 
+import LoginForm from '../src/Components/Login'
+import RegisterForm from './Components/Register' 
+import {Route ,BrowserRouter as Router} from 'react-router-dom';
+import {connect} from 'react-redux'
+import HairStylist from './Components/HairStylist'
 
-function App() {
-  return (
+function App({isLoggedIn ,isRegister}) {
+
+  const isUserLoggedIn = isLoggedIn || localStorage.getItem('token') !== null 
+  const isUserRegister = isRegister || localStorage.getItem('token') !== null
+
+  return (  
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {isUserLoggedIn ? <Route exact path = "/" component = {HairStylist}/> : <Route exact path = "/" component = {LoginForm}/> } 
+      {isUserRegister ?  <Route path = "/reg" component = {HairStylist} /> : <Route exact path = "/reg" component ={RegisterForm} /> }
+      
     </div>
+    </Router>
+   
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  console.log(state)
+  return {
+    isLoggedIn: state.isLoggedIn
+  }
+}
+
+export default connect(mapStateToProps)(App);
