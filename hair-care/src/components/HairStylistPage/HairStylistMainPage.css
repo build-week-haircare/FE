@@ -1,0 +1,40 @@
+#root>div>section>div>div.extra.content>a {
+    margin: 0 20px;
+}
+.ui.link.card{
+    margin-bottom: 35px;
+    background: #494949;
+ }
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 35px;
+    justify-content: space-between;   
+}
+h2{
+    font-family: 'Indie Flower', cursive;
+    color: plum;
+}
+h1{
+    font-family: 'PT Serif', serif; 
+    color: #494949;
+}
+.card{
+    font-family: 'Indie Flower', cursive;
+    font-size: 23px;
+}
+div{
+    margin-bottom: 20px;
+}
+.content{
+    color: plum;
+}
+.date{
+    color: plum;
+}
+a{
+    color: plum;
+}
+.ui.icon.button{
+    background: plum;
+}
