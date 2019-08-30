@@ -22,7 +22,7 @@ function App() {
         <img src={Logo} alt="hair logo" />
       </Divider>
        <Route path="/LoginForm" component={LoginForm} />
-      <Route path='/registration' component={Registration} />
+      <Route exact path='/' component={Registration} />
 
 
       <Route
