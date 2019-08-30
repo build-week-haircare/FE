@@ -1,25 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import './HairStylistMainPage.css';
 import axios from 'axios';
-import {Route} from 'react-router-dom'
 import HairStylistCard from './HairStylistCard';
 import hairstylist from './HairStylistImages';
 
 
-const HairStylistMainPage = () => {
-  //   const [hairstylist, setHairStylist] = useState([]);
-  //   console.log(hairstylist);
-  //   useEffect(() => {
-  //     axios
-  //       .get('')
-  //       .then(response => {
-  //         // console.log(response); waiting on api from backend
-  //         // setHairStylist(response);
-  //       })
-  //       .catch(error => {
-  //         console.error('Server Error', error);
-  //       });
-  //   }, []);
+
+const HairStylistMainPage = () =>{
+    const [styler, setStyler] = useState("");
+    // const [hairstylist, setHairStylist] = useState([]);
+  //   // console.log(props, "props");
+  //   // console.log("hairstylists", hairstylist);
+
+  useEffect(() => {
+    axios.get('https://bw-hair-care-be.herokuapp.com/').then(res => {
+      console.log(res);
+      setStyler(res.data)
+    });
+  }, []);
 
   return (
     <section className="character-list">
@@ -34,7 +32,9 @@ const HairStylistMainPage = () => {
        
       <h3 className="ui dividing header"></h3>
       <h1>Find Stylists</h1>
+      {styler}
     <div className="images">
+      
       {hairstylist.map(stylists => {
         console.log(stylists);
         return (

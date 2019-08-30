@@ -11,7 +11,7 @@ function App() {
     <div className="App ">
       <img src={Logo} alt="hair logo" />
 
-      <Route exact path={`/`} component={HairStylistMainPage} />
+      <Route exact path={`/Mainpage`} component={HairStylistMainPage} />
       {/* <Route path ={`/portfolio`} component={HairStylistPortfolio} /> */}
 
     </div>
