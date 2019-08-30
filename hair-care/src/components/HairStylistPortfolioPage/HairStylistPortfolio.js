@@ -54,7 +54,7 @@ function HairStylistPortfolio(props) {
           salon.
         </p>
       </h4>
-      <NavLink to={`/`}>
+      <NavLink to={`/Mainpage`}>
         <button className="ui left labeled icon button">
           <i className="left arrow icon"></i>
           Back Home
